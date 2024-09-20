@@ -103,7 +103,7 @@ class OpenFileDialog(Dialog):
 
     @staticmethod
     def _get_success_percent(log_meta):
-        return log_meta.episode_stats.success_count / log_meta.episode_stats.episode_count * 100
+        return (log_meta.episode_stats.success_count / log_meta.episode_stats.episode_count * 100) if log_meta.episode_stats.episode_count else 0
 
     @staticmethod
     def _make_percent_label(master, value, best_value):

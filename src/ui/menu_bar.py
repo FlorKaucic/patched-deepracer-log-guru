@@ -56,12 +56,12 @@ class MenuBar():
         menu = Menu(self.menubar, tearoff=0)
 
         if existing_log_world_names:
-            for i, t in enumerate(self.main_app.tracks.values()):
+            for i, t in enumerate(sorted(self.main_app.tracks.values(), key=lambda track: str(type(track)))):
                 if t.get_world_name() in existing_log_world_names:
                     menu.add_command(label=t.get_name_on_menu(), command=lambda track=t: self.choose_track(track))
             menu.add_separator()
 
-        for i, t in enumerate(self.main_app.tracks.values()):
+        for i, t in enumerate(sorted(self.main_app.tracks.values(), key=lambda track: str(type(track)))):
             if t.get_world_name() not in existing_log_world_names:
                 menu.add_command(label=t.get_name_on_menu(), command=lambda track=t: self.choose_track(track))
 

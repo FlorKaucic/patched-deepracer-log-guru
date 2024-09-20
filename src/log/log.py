@@ -220,7 +220,7 @@ class Log:
         if saved_events:
             episode_events = episode_events[:-1]
 
-        last_episode = episode_events[-1]
+        last_episode = episode_events[-1] if episode_events else []
         if len(last_episode) == 0 or not last_episode[-1].job_completed:
             episode_events = episode_events[:-1]
 
@@ -291,8 +291,9 @@ class Log:
             self._log_meta.episode_stats.average_percent_complete = \
                 total_percent_complete / self._log_meta.episode_stats.episode_count
 
-        training_start_time = self._episodes[0].events[0].time
-        training_end_time = self._episodes[-1].events[-1].time
+
+        training_start_time = self._episodes[0].events[0].time if self._episodes else 0
+        training_end_time = self._episodes[-1].events[-1].time if self._episodes else 0
         self._log_meta.episode_stats.training_minutes = int(round((training_end_time - training_start_time) / 60))
 
     def _divide_episodes_into_quarters(self, please_wait: PleaseWait,

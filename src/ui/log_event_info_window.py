@@ -203,7 +203,7 @@ class LogEventInfoWindow(tk.Toplevel):
             for i, r in enumerate(self.other_discounted_future_rewards):
                 r.set(get_pretty_large_integer(event.discounted_future_rewards[i + 1]))
 
-        self.debug_output.set(get_formatted_debug(event.debug_log, 10, 80, []))  # TODO - expose configuration
+        self.debug_output.set(get_formatted_debug(event.debug_log, 30, 800, []))
         self.lift()
 
     def _make_long_discount_factor_title(self, factor_id):

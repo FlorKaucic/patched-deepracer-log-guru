@@ -54,6 +54,7 @@ from src.tracks.ace_super_speedway_cw_track import AceSuperSpeedwayClockwiseTrac
 from src.tracks.ace_super_speedway_ccw_track import AceSuperSpeedwayCounterClockwiseTrack
 from src.tracks.ross_raceway_track import RossRacewayTrack
 from src.tracks.ross_super_speedway_track import RossSuperSpeedwayTrack
+from src.tracks.ross_super_speedway_cw_track import RossSuperSpeedwayClockwiseTrack
 from src.tracks.oval_track import OvalTrack
 from src.tracks.breadcentric_loop_track import BreadCentricLoopTrack
 from src.tracks.breadcentric_speedway_track import BreadCentricSpeedwayTrack
@@ -86,12 +87,7 @@ from src.tracks.ace_speedway_cw_track import AceSpeedwayClockwiseTrack
 from src.tracks.ace_speedway_ccw_track import AceSpeedwayCounterClockwiseTrack
 from src.tracks.breadcentric_speedway_ccw_track import BreadCentricSpeedwayCounterClockwiseTrack
 from src.tracks.breadcentric_speedway_cw_track import BreadCentricSpeedwayClockwiseTrack
-from src.tracks.ross_raceway_cw_track import RossRacewayClockwiseTrack
 from src.tracks.ross_raceway_ccw_track import RossRacewayCounterClockwiseTrack
-from src.tracks.cosmic_loop_cw_track import CosmicLoopClockwiseTrack
-from src.tracks.cosmic_loop_ccw_track import CosmicLoopCounterClockwiseTrack
-from src.tracks.baja_turnpike_cw_track import BajaTurnpikeClockwiseTrack
-from src.tracks.baja_turnpike_ccw_track import BajaTurnpikeCounterClockwiseTrack
 
 
 def get_all_tracks():
@@ -115,19 +111,16 @@ def get_all_tracks():
               VivalasLoooTrack(), VivalasSpeedwayTrack(), RLSpeedwayTrack(),
               RogueCircuitTrack(), AceSpeedwayTrack(), AceSpeedwayClockwiseTrack(), AceSpeedwayCounterClockwiseTrack(),
               AceSuperSpeedwayTrack(), AceSuperSpeedwayClockwiseTrack(), AceSuperSpeedwayCounterClockwiseTrack(),
-              RossRacewayTrack(), DBroSuperRacewayClockwiseTrack(), DBroSuperRacewayCounterClockwiseTrack(),
-              RossSuperSpeedwayTrack(), OvalTrack(), BreadCentricLoopTrack(), BreadCentricSpeedwayTrack(),
-              BreadCentricSpeedwayClockwiseTrack(), BreadCentricSpeedwayCounterClockwiseTrack(),
-              DBroRacewayTrack(), DBroSuperRacewayTrack(), JochemTurnpikeTrack(), JochemHighwayTrack(),
-              RogerRingTrack(), JennensSuperSpeedwayTrack(), JennensFamilySpeedwayTrack(),
-              Reinvent2022Track(), Reinvent2022ClockwiseTrack(), Reinvent2022CounterClockwiseTrack(),
-              PoChunSpeedwayClockwiseTrack(), PoChunSpeedwayCounterClockwiseTrack(),
-              LarsCircuitClockwiseTrack(), LarsCircuitCounterClockwiseTrack(),
+              RossRacewayTrack(), RossRacewayCounterClockwiseTrack(), DBroSuperRacewayClockwiseTrack(),
+              DBroSuperRacewayCounterClockwiseTrack(), RossSuperSpeedwayTrack(), RossSuperSpeedwayClockwiseTrack(),
+              OvalTrack(), BreadCentricLoopTrack(), BreadCentricSpeedwayTrack(), BreadCentricSpeedwayClockwiseTrack(),
+              BreadCentricSpeedwayCounterClockwiseTrack(), DBroRacewayTrack(), DBroSuperRacewayTrack(),
+              JochemTurnpikeTrack(), JochemHighwayTrack(), RogerRingTrack(), JennensSuperSpeedwayTrack(),
+              JennensFamilySpeedwayTrack(), Reinvent2022Track(), Reinvent2022ClockwiseTrack(),
+              Reinvent2022CounterClockwiseTrack(), PoChunSpeedwayClockwiseTrack(),
+              PoChunSpeedwayCounterClockwiseTrack(), LarsCircuitClockwiseTrack(), LarsCircuitCounterClockwiseTrack(),
               RogueRacewayTrack(), RogueRacewayClockwiseTrack(), RogueRacewayCounterClockwiseTrack(),
-              RogerSuperRacewayTrack(), RogerSuperRacewayClockwiseTrack(), RogerSuperRacewayCounterClockwiseTrack(),
-              RossRacewayClockwiseTrack(), RossRacewayCounterClockwiseTrack(),
-              CosmicLoopClockwiseTrack(), CosmicLoopCounterClockwiseTrack(),
-              BajaTurnpikeClockwiseTrack(), BajaTurnpikeCounterClockwiseTrack()
+              RogerSuperRacewayTrack(), RogerSuperRacewayClockwiseTrack(), RogerSuperRacewayCounterClockwiseTrack()
               ]:
         t.prepare(tracks)
 

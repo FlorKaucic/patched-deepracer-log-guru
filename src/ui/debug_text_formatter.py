@@ -22,7 +22,7 @@ def get_formatted_debug(debug: str, max_lines, max_length, fields: list):
 
     formatted = ""
     lines = prepared_debug.split("\n")
-    for line in lines[0:min(len(lines), max_lines)]:
+    for line in lines[0:len(lines)]:
         if formatted:
             formatted += "\n"
         if len(line) > max_length:
